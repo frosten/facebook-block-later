@@ -3,7 +3,7 @@
   "name": "Facebook Block Later",
   "description": "Block any person (friend) in one week",
   "version": "1.0",
-  "author": "S. Ferit Arslan feritarslan@gmail.com"
+  "author": "S. Ferit Arslan feritarslan@gmail.com",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
