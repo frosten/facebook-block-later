@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Facebook Block Later",
+  "description": "Block any person (friend) in one week",
+  "version": "1.0",
+  "author": "S. Ferit Arslan feritarslan@gmail.com"
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "content_security_policy": "script-src 'self' https://www.facebook.com; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["jquery.js", "inject.js"],
+	  "css": ["popup.css"]
+    }
+  ],
+  "background": {
+	 "scripts": ["background.js"]
+  }, 
+  "permissions": [
+	"storage", 
+	"tabs",
+	"http://*/*",
+	"https://*/*",
+	"https://www.facebook.com/"
+  ]
+}
+
