@@ -38,7 +38,7 @@ setInterval(function() {
 			 userID = $('.entity._4v1s').attr("data-uid");
 			 
 			 var banDate = new Date();
-			 banDate.setSeconds(banDate.getSeconds() + 30);
+			 banDate.setSeconds(banDate.getSeconds() + 604800);
 			 
 			 saveChanges({
 				 id:userID,
